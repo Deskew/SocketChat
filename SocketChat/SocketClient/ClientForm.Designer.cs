@@ -125,6 +125,7 @@
             // 
             // Receive_backgroundWorker
             // 
+            this.Receive_backgroundWorker.WorkerSupportsCancellation = true;
             this.Receive_backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Receive_backgroundWorker_DoWork);
             // 
             // ClientForm
