@@ -43,6 +43,7 @@
             // 
             // Send_backgroundWorker
             // 
+            this.Send_backgroundWorker.WorkerSupportsCancellation = true;
             this.Send_backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Send_backgroundWorker_DoWork);
             // 
             // label5

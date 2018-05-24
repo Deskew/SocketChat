@@ -37,10 +37,7 @@ namespace SocketClient
                     Receive_textBox.AppendText("Connected to server" + "\n");
                     stw = new StreamWriter(client.GetStream());
                     str = new StreamReader(client.GetStream());
-                    stw.AutoFlush = true;
-
-                    Send_backgroundWorker.RunWorkerAsync();                         //Start recieving data 
-                    Send_backgroundWorker.WorkerSupportsCancellation = true;        
+                    stw.AutoFlush = true;      
                     Receive_backgroundWorker.RunWorkerAsync();
                 }
             }
